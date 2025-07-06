@@ -1,0 +1,98 @@
+/* General Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.admin-container {
+    text-align: center;
+    width: 1200px; /* Set a fixed width for the container */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Table Heading */
+.admin-container h2 {
+    text-align: center;
+    font-size: 32px; /* Adjusted size for better readability */
+    color: black; /* Color for the heading */
+    position: relative; 
+    text-align: center;
+    
+    margin-bottom: 100px; /* Add space below the heading */
+    margin-top: -40px;
+}
+
+.admin-container h2::after {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute;
+    bottom: -30px; /* Position it a little below the heading */
+    left: 50%; /* Start from the center of the heading */
+    transform: translateX(-50%); /* Center the underline */
+    width: 10%; /* Make the underline half the length of the heading */
+    height: 3px; /* Set the thickness of the underline */
+    background-color: #9B1B30; /* Underline color */
+    text-underline-offset: 20px;
+}
+
+/* Table Styling */
+.applicants-table {
+    width: 100%; /* Make the table take full width of the container */
+    border-collapse: collapse;
+    margin:20px;
+}
+
+.applicants-table th,
+.applicants-table td {
+    border: 1px solid black; /* Black borders */
+    padding: 10px;
+    text-align: left;
+}
+
+.applicants-table th {
+    background-color: #9B1B30; /* Red background for headers */
+    color: white; /* White text for headers */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.applicants-table td {
+    color: #333; /* Dark text color for contrast */
+    font-size: 17px;
+}
+
+/* Alternating Row Colors */
+.applicants-table tr.even-row {
+    background-color: #f5f5f5; /* Light greyish white for even rows */
+}
+
+.applicants-table tr.odd-row {
+    background-color: #fafafa; /* Very light grey for odd rows */
+}
+
+/* No applicants message styling */
+.applicants-table td[colspan="7"] {
+    text-align: center;
+    color: #d32f2f; /* Red text for no-applicants message */
+    font-weight: bold;
+}
+
+/* Button Styling */
+.view-button {
+    padding: 5px 10px;
+    background-color: #9B1B30;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+    background-color: #7a1423; /* Darker shade for hover effect */
+    transform: scale(1.05);
+}

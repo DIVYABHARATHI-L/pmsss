@@ -1,0 +1,98 @@
+/* Vision Section */
+.vision-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9; /* Soft background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Vision Container */
+.vision-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient */
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Vision Image Section */
+.vision-image {
+  flex: 1 1 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-img {
+  width: 90%;
+  height: auto;
+  border-radius: 20px 0 0 20px; /* Rounded on left */
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1); /* Elegant shadow */
+  transform: rotate(-3deg); /* Slight tilt for creativity */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vision-img:hover {
+  transform: rotate(0); /* Reset tilt on hover */
+  box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.2); /* Intense shadow on hover */
+}
+
+/* Vision Content Section */
+.vision-content {
+  flex: 1 1 50%;
+  padding: 2rem;
+}
+
+.vision-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.vision-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #b22222; /* Deep red accent */
+  margin: 0.5rem 0;
+  border-radius: 2px;
+}
+
+.vision-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.vision-text span {
+  font-weight: bold;
+  color: #b22222; /* Highlighted keywords */
+}
+
+.vision-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #b22222;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vision-btn:hover {
+  background-color: #8b0000;
+  transform: scale(1.05); /* Slight pop effect */
+}

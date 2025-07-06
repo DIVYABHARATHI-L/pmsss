@@ -1,0 +1,97 @@
+/* Container for the entire timeline */
+.timeline-container {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .timeline-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #660000; /* Dark red for the title */
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Custom styling for each timeline item */
+  .timeline-item {
+    position: relative;
+    margin: 1rem 0;
+  }
+  
+  /* Remove default Material-UI timeline line */
+  .timeline-item:before {
+    display: none;
+  }
+  
+  /* Separator styling */
+  .timeline-separator .MuiTimelineDot-root {
+    background-color: #660000; /* Dark red */
+    color: #fff;
+    border: none; /* Remove default border */
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .timeline-separator .MuiTimelineConnector-root {
+    background-color: #660000;
+    width: 3px;
+  }
+  
+  /* Box styling for timeline content */
+  .timeline-box {
+    border: 2px solid #660000;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #fff; /* Light background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    width: 60%;
+  }
+  
+  .timeline-box.left {
+    margin-right: auto;
+  }
+  
+  .timeline-box.right {
+    margin-left: auto;
+  }
+  
+  /* Date styling */
+  .timeline-date {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0.5rem;
+  }
+  
+  /* Status styling */
+  .timeline-status {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  /* Add slight hover effect to timeline content boxes */
+  .timeline-box:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .timeline-box {
+      width: 90%;
+    }
+  
+    .timeline-title {
+      font-size: 2rem;
+    }
+  }
+  

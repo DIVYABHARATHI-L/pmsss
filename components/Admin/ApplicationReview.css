@@ -1,0 +1,95 @@
+/* General Styling */
+body {
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  /* Application Review Container */
+  .application-review-container {
+    padding: 20px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures container takes up full viewport height */
+    text-align: center; /* Centers text inside the container */
+  }
+  
+  /* Heading Style */
+  h2 {
+    font-size: 32px;
+    color: black; /* Color for the heading */
+    margin-bottom: 50px; /* Adjusted space below the heading */
+    margin-top: 650px; /* Adjusted space above the heading */
+    position: relative; /* Ensure positioning context for the pseudo-element */
+  }
+  
+  h2::after {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute;
+    bottom: -20px; /* Position it a little below the heading */
+    left: 50%; /* Start from the center of the heading */
+    transform: translateX(-50%); /* Center the underline */
+    width: 20%; /* Increased width of the underline */
+    height: 3px; /* Set the thickness of the underline */
+    background-color: #9B1B30; /* Underline color */
+    text-underline-offset: 10px; /* Adjusted to avoid overlap with the heading */
+  }
+  
+  /* Table Styling */
+  table {
+    width: 200%; /* Ensures the table takes up full width */
+    max-width: 1200px; /* Limits the table width to make it more readable */
+    border-collapse: collapse;
+    margin: 50px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+    overflow: hidden; /* Prevent overflow of content */
+    text-overflow: ellipsis; /* Add ellipsis if content is too wide */
+  }
+  
+  th {
+    background-color: #9B1B30; /* Classic red background for headers */
+    color: white;
+  }
+  
+  td {
+    background-color: #f9f9f9;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #f1f1f1;
+  }
+  
+  /* Action Buttons Styling */
+  .action-buttons {
+    text-align: center;
+
+  }
+  
+  .accept-button, .reject-button {
+    background-color: #9B1B30; /* Red background for buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    margin-bottom: 100px;
+  }
+  
+  .accept-button:hover, .reject-button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Status Message Styling */
+  .status {
+    font-size: 20px;
+    color: #d32f2f; /* Red color for status message */
+  }
+  

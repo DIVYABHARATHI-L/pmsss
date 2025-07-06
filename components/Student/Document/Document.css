@@ -1,0 +1,99 @@
+.document-upload-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    
+  }
+  
+  .document-upload-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .title-line {
+    width: 100%;
+    max-width: 360px;
+    height: 3px;
+    background-color: #b22222;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .document-upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .file-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  input[type='file'] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .file-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .remove-file-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .remove-file-button:hover {
+    color: darkred;
+  }
+  
+  .declaration {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  button {
+    width: auto;
+  padding: 10px 20px;
+  font-size: 16px; 
+  background-color: #b22222; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  display: block; 
+  margin: 20px auto; 
+  transition: background-color 0.3s; 
+  }
+  
+  button:hover {
+    background-color: #8b0000;
+  }
+
+  
+  .mandatory{
+    color: #b22222;
+  }

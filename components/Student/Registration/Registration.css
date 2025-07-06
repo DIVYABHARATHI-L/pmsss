@@ -1,0 +1,116 @@
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 50px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .registration-title {
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .title-line {
+    width: 100%;
+    max-width: 360px;
+    height: 3px;
+    background-color: #b22222;
+    margin: 0 auto;
+  }
+  
+  
+  .section-title {
+    color: #b22222;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    width: 90%;
+    margin-top: 30px;
+  }
+  
+  
+  .registration-form label {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  
+  .registration-form input, .registration-form select, .registration-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  .registration-form textarea {
+    height: 80px;
+  }
+  
+  
+  .registration-form button {
+    width: auto; 
+  padding: 10px 20px;
+  font-size: 16px; 
+  background-color: #b22222; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  display: block; 
+  margin: 20px auto; 
+  transition: background-color 0.3s;
+  }
+  
+  .registration-form button:hover {
+    background-color: #8b0000;
+  }
+
+
+  .registration-form input:focus, 
+.registration-form select:focus, 
+.registration-form textarea:focus {
+  outline: 2px solid #b22222; 
+}
+
+.declaration {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .declaration p {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .declaration label {
+    font-size: 14px;
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .declaration input[type="checkbox"] {
+    margin-right: 10px; 
+    width: auto;
+  }
+  

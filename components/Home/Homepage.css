@@ -1,0 +1,24 @@
+.homepage {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5faaf1602fb3bd69c5102e1f/2dbb7a39-4a53-45aa-bf69-9a0510994b44/Scholarship+Background+%282%29.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
